@@ -1,0 +1,40 @@
+1. What is Low‑Level Design (LLD)?
+Designing the internal structure (“skeleton”) of an application by identifying
+classes/objects, their relationships, data flows, and how DSA solutions plug into this
+structure.
+
+● DSA: Solves isolated problems (e.g. “find shortest path in an array/graph”) using
+algorithms like binary search, quicksort, Dijkstra’s, heaps, etc.
+● LLD: Determines which objects exist in the system and how they interact, then
+applies DSA inside that structure.
+
+
+2. Core LLD Principles & Focus Areas :->
+1. Scalability
+● Handle large user volumes easily.
+● Code structure should allow rapid, low‑effort expansion (adding servers, features).
+2. Maintainability
+● New features shouldn’t break existing ones.
+● Code should be easy to debug and locate bugs.
+3. Reusability
+● Write loosely coupled, “plug‑and‑play” modules (e.g. generic notification or matching
+algorithms usable across apps like Zomato, Swiggy, Amazon delivery).
+
+
+3. What LLD Is Not (vs. HLD)
+● High‑Level Design (HLD) focuses on system architecture, not code structure:
+● Tech stack: Choice of languages/frameworks (e.g. Java Spring Boot).
+● Database: SQL vs. NoSQL vs. hybrid.
+● Server scaling & deployment: Autoscaling, load balancers, cost optimization on
+AWS/GCP.
+● Cost considerations: Minimizing cloud/server expenses per load.
+
+4.Summary & Takeaways
+● DSA = Brain of an application: algorithms solve specific tasks.
+● LLD = Skeleton: object models, class diagrams, code organization, and where
+algorithms plug in.
+● HLD = Architecture: system‑wide infrastructure, tech stack, databases, servers.
+
+--------------------------------------------------------------------------------------------------------------
+
+“If DSA is the brain, LLD is the skeleton of your application.”
