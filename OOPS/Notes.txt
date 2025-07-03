@@ -1,0 +1,11 @@
+Concrete method:
+is a method that has a complete implementation, meaning it's not abstract and can be directly called or invoked. 
+Definition:
+A concrete method is a method that provides a full definition, including the code that will be executed when the method is called. 
+Example:
+    Concrete method --->>
+    // public void myMethod() {
+    //     System.out.println("This is a concrete method.");
+    // }
+
+

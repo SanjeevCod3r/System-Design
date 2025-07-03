@@ -1,0 +1,73 @@
+OOPS-->
+Object Oriented Programming System/Structure
+-> OOP is a Programming Paradigm or Methodology
+-> Small Talk is frist Object Oriented Programming Language
+6 Main Pillar Of Oops Are:
+-> Classes
+-> Object and Method
+-> Encapsulation
+-> Inheritance
+-> Polymorphism
+-> Abstraction
+
+Class-------->
+-> Class is the collection of Objects.
+-> Class is not a real world entity. It is just a template or blueprint or prototype
+-> Class does not occupy memeory
+-> Syntax:
+access-modifiers class className{
+    -> Method
+    -> Constructors
+    -> fields
+    -> blocks
+    -> Nested Class
+}
+
+Method------>
+-> A set of codes which perform a perticular task 
+-> Advantage of methods
+1. Code Reusabilitity
+2. Code Optimization
+-> Syntax:
+access-modifiers return-type methodName(parameter-list){
+
+}
+
+Object----->
+-> Object is an instance of class
+-> Object is real world entity
+-> Object occupies memory
+-> Object consists of:-
+1. Identity --> name 
+2. State/Attribute --> color , breed age 
+3. Behavior --> bark , eat , sleep , run , jump , play , bark , eat
+-> How to create an Object:
+1. new Keyword 
+2. clone() method
+3. newInstance() method
+4. factory method
+5. deserialization
+
+-> Object Creation with new keyword Step:
+1. Declaration : It is declaring name with an object type.
+Example:
+Animal rocky;
+2. Instantiation : This is when memory is allocated for an object. The 'new' keyword used to create the object.
+Example:
+rocky = new 
+3. Initialization : The 'new' keyword is followed by a call to a constructor. This call initialize the new object.
+Example:
+rocky = new Animal()
+
+Final Syntax: Animal rocky = new Animal();
+Call Object Behavior Syntax: rocky.run();
+
+
+
+Object Initialization--------------------------->
+1.By reference Variable 
+2.By Using Method
+3.By Using Constructor
+
+
+

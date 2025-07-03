@@ -1,0 +1,86 @@
+Polymorphism:
+Polymorphism in Java is a concept by which we can perform a single action in different ways.
+Polymorphism is derived from 2 Greek words: 
+poly -> many and
+morphs -> forms. 
+So polymorphism means many forms.
+Example: Water -> Solid, Liquid, Gas
+
+Polymorphism is of 2 types:
+1. Compile time polymorphism: (Compiler Handle)
+Compile time polymorphism is also known as static polymorphism.
+Achive: Method Overloading
+2. Run time polymorphism: (JVM Handle)
+Run time polymorphism is also known as dynamic polymorphism.
+Achive: Method Overriding
+
+
+Method Overloading:
+1. Same Name
+2. Same Class
+3. Diffrent Arguments:
+-> No. of Argu
+-> Seq of Argu
+-> Type of Argu
+
+Method Overriding:
+1. Same Name
+2. Diffrent Class
+3. Same Arguments:
+-> No. of Argu
+-> Seq of Argu
+-> Type of Argu
+4. Inheritance Concept(IS-A)
+
+
+Interview Question?
+1. Can we achieve Method Overloading by Changing the return type of method Only ?
+No, Not Possible because of ambiquity
+
+2. Can we Overload java main() method ?
+Yes, we can have any number of main methods in a class by method overloading.
+This is because JVM always call main() method which receives string array as
+arguments only.
+
+3. Do Overriding method must have same return type (subtype) ?
+From Java 5.0 onwards it is possible to have different return type for a overriding method in child class, but child's return type should be sub-type of parent's return type.
+This phenomena is known as covariant return type
+
+4. Overriding and Access-Modifiers
+The access modifier for an overriding method can allow more, but not less, access than the overridden method. For example, a protected instance method in the super-class can be made public, but not private, in the subclass. Doing so, will generate compile-time error.
+
+
+
+
+Use Of Method Overriding:
+Method overriding in Java is a core concept of object-oriented programming that allows a subclass to provide a different implementation of a method that is already provided by its parent class. This is a powerful feature that allows developers to write flexible and maintainable code.
+The implementation in the subclass Overrides(replace) the implementation in the superclass by providing a 
+method that has same name, same parameters or signature, and same return type as the method in the parent class.
+
+
+Overriding and Exception-Handling:
+Below are two rules to note when overriding methods related to exception handling.
+Rule 1: If the super-class overridden method does not throws an exception, subclass overriding method can only throws the unchecked exception, throwing checked exception will lead to compile-time error.
+
+Rule 2: If the super-class overridden method does throws an exception, subclass overriding method can only throw same, subclass exception. Throwing parent exception in Exception hierarchy will lead to compile time error.Also there is no issue if subclass overridden method is not throwing any exception.
+
+
+Case5: Invoking Overridden method from sub-class (Important)
+We can call parent class method in overriding method using super keyword.
+
+
+Which methods cannot override ?
+Final methods can not be overridden :
+If we don't want a method to be overridden, we declare it as final.
+
+Static methods can not be overridden : 
+(Method Overriding vs Method Hiding) When you defines a static method with same signature as a static method in 
+base class, it is known as method hiding.
+
+Private methods can not be overridden :
+ Private methods cannot be overridden as they are bonded during compile time. Therefore we can't even override private methode in a subclass.
+
+
+Case 7:
+Overriding and synchronized/strictfp method
+The presence of synchronized/strictfp modifier with method have no effect on the rules of overriding, i.e. it's possible that a synchronized/strictfp method can override a non synchronized/strictfp one and vice-versa.

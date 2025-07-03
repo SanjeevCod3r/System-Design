@@ -1,0 +1,48 @@
+Interface:
+Interface are similar to Abstract Class but having all the method of abstract type.
+
+Interface are the blueprint of the class It specify what a class must do and not how.
+
+1. It is used to achive abstraction
+2. It is used to achive multiple inheritance
+3. It is used to achive loose coupling (Agr ek ke andr change kroge tho woo durse ko affect nhi krega)
+
+Keyword used: implements
+
+Syntax:
+interface InterfaceName{
+    
+  1.  methods -> abstract , public
+
+  2. fields -> public static final
+
+  3. 8th Version
+  default concrete method
+
+  4. public static method
+
+  5. 9th Version
+  private method
+
+}
+
+What is Interface ?
+* Interface is a mechanism to achieve abstraction in java.
+* Interface is similar to abstract class but having all the methods of abstract type i.e. it cannot have a method body.
+* Since Java 8, we can have default and static methods in an interface.
+* Since Java 9, we can have private methods in an interface.
+
+2. Why use Java interface?
+1. It is used to achieve abstraction.
+2. By interface, we can support the functionality of multiple inheritance.
+3. It can be used to achieve loose coupling
+
+Syntax:
+interface InterfaceName{
+    // constants fields
+    //abstract methods
+}
+
+Q. Similirities b/w Abstract class and interface
+1. Both can contain abstract method.
+2. We can not create an instance of abstract class and interfaces.

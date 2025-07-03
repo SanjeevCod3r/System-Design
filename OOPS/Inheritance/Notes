@@ -1,0 +1,35 @@
+Inheritance:
+Inheritance is the procedure by which one object acquires all the properties and behaviors
+of a parent object.
+(OR)
+Inheriting the properties of parent class into child class
+
+Keyword: extends
+IS-A -> Realtionship(Parent-Child relationShip)
+
+Advantage:
+-> Code Reusebility
+-> It promote runtime polymorphism by allowing method overriding
+
+Disadvantage:
+-> the two classes (base and inherited class) get tightly coupled
+
+Types of Inheritance:
+1. Single Inheritance -> Java
+One class extends another class (One class Only)
+2. Multilevel Inheritance -> Java
+One class can inherit from a derived class. Hence, the derived class become the base class
+for the new class.
+3. Hierarchical Inheritance -> Java
+One class is inherited by many sub classes.
+4. Multiple Inheritance -> Not in Java
+(Java disallows Multiple inheritance to avoid the complexity and ambiguity associated with it, particularly the "Diamond Problem" where a class inherits from two classes that have a common ancestor, leading to conflicts in the inheritance of methods.)
+5. Hybrid Inheritance -> Not in Java (Dimond Problem)
+
+Some Property are Not Inherit:(Imp Interview)
+1. Constructor (becase constructor is not a part of class)
+2. private Accesbility
+
+Important Point:
+Every Class has a Super or say Parent Class
+i.e Object class(but object class does not have any parent class)

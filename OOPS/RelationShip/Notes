@@ -1,0 +1,67 @@
+Types of Relationship between Classes:
+1.Inheritance(IS-A)
+2.Association(HAS-A)
+a.Aggregation -> Weak Bonding (Car->Music Player)
+b.Composition -> Strong Bonding (Car->Engine)
+
+
+Relation B/W Classes
+Inheritance:
+-> (IS-A)
+-> extends
+-> Blood Relation
+-> tightly coupled
+
+
+Association:
+-> (HAS-A)
+-> ref.variable, new
+-> Non-Blood Relation
+-> Not tightly coupled
+
+
+Association is a relation between two separate classes which is established through their Objects.
+Association can be one-to-one, one-to-many, many-to-one, many-to-many. In Object-Oriented programming, an Object communicates to another object to use functionality and services provided by that object. Composition and Aggregation are the two forms of association. 
+
+Composition:
+Composition is a restricted form of Aggregation in which two entities are highly dependent on each other.  
+It represents part-of relationship.
+In composition, both entities are dependent on each other.
+When there is a composition between two entities, the composed object cannot exist without the other entity.
+How to Achive: In Composition container Object holds directly contained Objects
+example:
+final class College{
+    private final Branches braches;
+    College(BranchesNames names){
+        braches = new Branches(names);
+    }
+}
+
+
+In the case of composition, the Branches is completely encapsulated by the College. There is no way for the outside world to get a reference to the Branches. The Branches lives and dies with the College.
+
+
+Aggregation:
+It is a special form of Association where:  
+It represents Has-A’s relationship.
+It is a unidirectional association i.e. a one-way relationship. For example, a department can have students but vice versa is not possible and thus unidirectional in nature.
+In Aggregation, both entries can survive individually which means ending one entity will not affect the other entity.
+How to Achive: In Aggration container Object hold just ref of contained onjects
+example:
+final class College{
+    private Professor professor;
+    void setProfessor(Professor professor){
+        this.professor = professor;
+    }
+    void teach(){
+        if(professor!=null){
+            professor.teach();
+        }
+    }
+}
+
+
+With aggregation, the College also performs its functions through Professor, but the Professor is not always an internal part of the College. Professor may be swapped, or even completely removed. Not only that, but the outside world can still have a reference to the Professor, and tinker with it regardless of whether it's in the College.
+
+
+https://www.geeksforgeeks.org/association-composition-aggregation-java/
